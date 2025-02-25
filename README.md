@@ -28,14 +28,14 @@ Deployment: Firebase
 ### How It Works (Step-by-Step Flow)
 
 1️⃣ User Registration & Login
-A user registers via POST /users/register with a username and password.
-Passwords are hashed and stored in the H2 database.
-The user logs in via POST /users/login with valid credentials.
-If successful, a JWT token is generated and returned.
+- A user registers via POST /users/register with a username and password.
+- Passwords are hashed and stored in the H2 database.
+- The user logs in via POST /users/login with valid credentials.
+- If successful, a JWT token is generated and returned.
 
 2️⃣ Using JWT to Access Product Service
-The user includes the JWT token in the Authorization header (Bearer <JWT>).
-Product Service verifies the token using the JWT secret key.
-If valid, the user can:
-Fetch a product via GET /products/{id}.
-Add a new product via POST /products (secured).
+- The user includes the JWT token in the Authorization header (Bearer <JWT>).
+- Product Service verifies the token using the JWT secret key.
+- If valid, the user can:
+- Fetch a product via GET /products/{id}.
+- Add a new product via POST /products (secured).
