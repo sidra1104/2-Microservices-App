@@ -20,10 +20,10 @@ REST endpoints:
 The Product Service requires a valid JWT from User Service for access (REST API).
 
 ### Tech Stack
-Backend: Spring Boot
-Database: H2DB
-Authentication: JWT
-Deployment: Firebase
+- Backend: Spring Boot
+- Database: H2DB
+- Authentication: JWT
+- Deployment: Firebase
 
 ### How It Works (Step-by-Step Flow)
 
